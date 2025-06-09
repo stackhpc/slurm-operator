@@ -13,6 +13,8 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
+- Changed default storageClassName to empty.
+
 ### Removed
 
 ## v0.3.0
