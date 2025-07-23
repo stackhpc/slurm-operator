@@ -5,8 +5,30 @@ entries:
       category: HPC
       licenses: Apache-2.0
     apiVersion: v2
+    appVersion: 9981c68
+    created: "2025-07-23T16:32:17.429930026Z"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: ~20.4
+    - condition: slurm-exporter.enabled
+      name: slurm-exporter
+      repository: oci://ghcr.io/slinkyproject/charts
+      version: ~0.3.0
+    description: Helm Chart for Slurm HPC Workload Manager
+    digest: 82da5edcaf7de7424cc683952cf43b80e5419844933e81ab5d604985ac48bdc9
+    name: slurm
+    type: application
+    urls:
+    - slurm-0.1.0-dev.0.main.237.tgz
+    version: 0.1.0-dev.0.main.237
+  - annotations:
+      category: HPC
+      licenses: Apache-2.0
+    apiVersion: v2
     appVersion: a3fb42e
-    created: "2025-07-23T15:48:54.018003088Z"
+    created: "2025-07-23T16:32:17.423310016Z"
     dependencies:
     - condition: mariadb.enabled
       name: mariadb
@@ -25,8 +47,18 @@ entries:
     version: 0.1.0-dev.0.feat-stackhpc-workflows.237
   slurm-operator:
   - apiVersion: v2
+    appVersion: 9981c68
+    created: "2025-07-23T16:32:17.435528824Z"
+    description: Helm Chart for Slurm HPC Workload Manager Operator
+    digest: c5f078769b4751227a0a622241443cbda48fd8286b7713485c726cce23b4c3b0
+    name: slurm-operator
+    type: application
+    urls:
+    - slurm-operator-0.1.0-dev.0.main.237.tgz
+    version: 0.1.0-dev.0.main.237
+  - apiVersion: v2
     appVersion: a3fb42e
-    created: "2025-07-23T15:48:54.020253956Z"
+    created: "2025-07-23T16:32:17.433159316Z"
     description: Helm Chart for Slurm HPC Workload Manager Operator
     digest: fd036cb624a5d9c80ccc0a2bc8c48446b4cc0ffbce671355f878b13c00114982
     name: slurm-operator
@@ -34,4 +66,4 @@ entries:
     urls:
     - slurm-operator-0.1.0-dev.0.feat-stackhpc-workflows.237.tgz
     version: 0.1.0-dev.0.feat-stackhpc-workflows.237
-generated: "2025-07-23T15:48:54.010808584Z"
+generated: "2025-07-23T16:32:17.417017901Z"
