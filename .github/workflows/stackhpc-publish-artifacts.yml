@@ -1,0 +1,34 @@
+name: Publish artifacts
+
+on:
+  # Publish artifacts on every push to master, every tag and open pull request
+  push:
+    branches:
+      - main
+    tags:
+      - "*"
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - ready_for_review
+      - reopened
+    branches:
+      - main
+
+# Use the head ref for workflow concurrency, with cancellation.
+# This should mean that any previous workflows for a PR get
+# cancelled when a new commit is pushed.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref }}
+  cancel-in-progress: true
+
+jobs:
+  publish_images:
+    uses: ./.github/workflows/stackhpc-publish-images.yml
+    secrets: inherit
+
+  publish_charts:
+    needs: [publish_images]
+    uses: ./.github/workflows/stackhpc-publish-charts.yml
+    secrets: inherit
