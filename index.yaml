@@ -6,7 +6,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 9981c68
-    created: "2025-07-23T16:32:17.429930026Z"
+    created: "2025-07-25T14:45:34.01445124Z"
     dependencies:
     - condition: mariadb.enabled
       name: mariadb
@@ -17,7 +17,7 @@ entries:
       repository: oci://ghcr.io/slinkyproject/charts
       version: ~0.3.0
     description: Helm Chart for Slurm HPC Workload Manager
-    digest: 82da5edcaf7de7424cc683952cf43b80e5419844933e81ab5d604985ac48bdc9
+    digest: b994f52bbbbc24ff6e6cb8e427ce64748c15de36d0f5e82d9c760e6d7165cf6d
     name: slurm
     type: application
     urls:
@@ -28,7 +28,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: a3fb42e
-    created: "2025-07-23T16:32:17.423310016Z"
+    created: "2025-07-25T14:45:34.008448912Z"
     dependencies:
     - condition: mariadb.enabled
       name: mariadb
@@ -48,9 +48,9 @@ entries:
   slurm-operator:
   - apiVersion: v2
     appVersion: 9981c68
-    created: "2025-07-23T16:32:17.435528824Z"
+    created: "2025-07-25T14:45:34.019618279Z"
     description: Helm Chart for Slurm HPC Workload Manager Operator
-    digest: c5f078769b4751227a0a622241443cbda48fd8286b7713485c726cce23b4c3b0
+    digest: a2ec3d07140f43ef5c30a5e9350a38b1d0239c6f17cfb70e52bfb340e9eb4f6d
     name: slurm-operator
     type: application
     urls:
@@ -58,7 +58,7 @@ entries:
     version: 0.1.0-dev.0.main.237
   - apiVersion: v2
     appVersion: a3fb42e
-    created: "2025-07-23T16:32:17.433159316Z"
+    created: "2025-07-25T14:45:34.017497567Z"
     description: Helm Chart for Slurm HPC Workload Manager Operator
     digest: fd036cb624a5d9c80ccc0a2bc8c48446b4cc0ffbce671355f878b13c00114982
     name: slurm-operator
@@ -66,4 +66,4 @@ entries:
     urls:
     - slurm-operator-0.1.0-dev.0.feat-stackhpc-workflows.237.tgz
     version: 0.1.0-dev.0.feat-stackhpc-workflows.237
-generated: "2025-07-23T16:32:17.417017901Z"
+generated: "2025-07-25T14:45:34.001112179Z"
