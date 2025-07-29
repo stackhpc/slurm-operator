@@ -6,7 +6,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 9981c68
-    created: "2025-07-25T14:45:34.01445124Z"
+    created: "2025-07-29T09:10:10.529192358Z"
     dependencies:
     - condition: mariadb.enabled
       name: mariadb
@@ -27,8 +27,30 @@ entries:
       category: HPC
       licenses: Apache-2.0
     apiVersion: v2
+    appVersion: 0b1dd37
+    created: "2025-07-29T09:10:10.52209885Z"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: ~20.4
+    - condition: slurm-exporter.enabled
+      name: slurm-exporter
+      repository: oci://ghcr.io/slinkyproject/charts
+      version: ~0.3.0
+    description: Helm Chart for Slurm HPC Workload Manager
+    digest: 8375a4addb68eb7700c42e6405fa69a20c58f6803eaf349a3d7d351a4effce68
+    name: slurm
+    type: application
+    urls:
+    - slurm-0.1.0-dev.0.fix-nil-string-storageclass.239.tgz
+    version: 0.1.0-dev.0.fix-nil-string-storageclass.239
+  - annotations:
+      category: HPC
+      licenses: Apache-2.0
+    apiVersion: v2
     appVersion: a3fb42e
-    created: "2025-07-25T14:45:34.008448912Z"
+    created: "2025-07-29T09:10:10.516271146Z"
     dependencies:
     - condition: mariadb.enabled
       name: mariadb
@@ -48,7 +70,7 @@ entries:
   slurm-operator:
   - apiVersion: v2
     appVersion: 9981c68
-    created: "2025-07-25T14:45:34.019618279Z"
+    created: "2025-07-29T09:10:10.536464372Z"
     description: Helm Chart for Slurm HPC Workload Manager Operator
     digest: a2ec3d07140f43ef5c30a5e9350a38b1d0239c6f17cfb70e52bfb340e9eb4f6d
     name: slurm-operator
@@ -57,8 +79,18 @@ entries:
     - slurm-operator-0.1.0-dev.0.main.237.tgz
     version: 0.1.0-dev.0.main.237
   - apiVersion: v2
+    appVersion: 0b1dd37
+    created: "2025-07-29T09:10:10.534190252Z"
+    description: Helm Chart for Slurm HPC Workload Manager Operator
+    digest: b53dcf0a487d233bee849e46863704109ee04a42034d5b007e01479b7083ed17
+    name: slurm-operator
+    type: application
+    urls:
+    - slurm-operator-0.1.0-dev.0.fix-nil-string-storageclass.239.tgz
+    version: 0.1.0-dev.0.fix-nil-string-storageclass.239
+  - apiVersion: v2
     appVersion: a3fb42e
-    created: "2025-07-25T14:45:34.017497567Z"
+    created: "2025-07-29T09:10:10.531286472Z"
     description: Helm Chart for Slurm HPC Workload Manager Operator
     digest: fd036cb624a5d9c80ccc0a2bc8c48446b4cc0ffbce671355f878b13c00114982
     name: slurm-operator
@@ -66,4 +98,4 @@ entries:
     urls:
     - slurm-operator-0.1.0-dev.0.feat-stackhpc-workflows.237.tgz
     version: 0.1.0-dev.0.feat-stackhpc-workflows.237
-generated: "2025-07-25T14:45:34.001112179Z"
+generated: "2025-07-29T09:10:10.508787418Z"
